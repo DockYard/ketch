@@ -1,7 +1,7 @@
 {
-  "name": "with-storybook",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "ketch",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
