@@ -17,6 +17,7 @@ module.exports = {
     browser: true
   },
   rules: {
+    'no-unused-vars': ['error', { varsIgnorePattern: 'jsx' }],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off'
   },

@@ -1,4 +1,4 @@
-import HelloWorld from '../components'
+import HelloWorld from '../src/components'
 
 export default { title: 'Hello World' }
 
