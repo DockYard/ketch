@@ -3,8 +3,9 @@
 
 import { ThemeProvider, jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
 import theme from '../../theme'
+import '../styles/global.scss'
 
 const App = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
