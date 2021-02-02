@@ -22,23 +22,58 @@ const Nav = () => (
         height: '100%'
       }}>
       <Link href="/">
-        <a>Home</a>
+        <a
+          sx={{
+            fontWeight: 'bold',
+            fontSize: 4,
+            cursor: 'pointer'
+          }}>
+          Home
+        </a>
       </Link>
 
       <Link href="/about">
-        <a>About</a>
+        <a
+          sx={{
+            color: 'text',
+            fontSize: 3,
+            cursor: 'pointer'
+          }}>
+          About
+        </a>
       </Link>
 
       <Link href="/lists">
-        <a>Lists</a>
+        <a
+          sx={{
+            color: 'text',
+            fontSize: 3,
+            cursor: 'pointer'
+          }}>
+          Lists
+        </a>
       </Link>
 
       <Link href="/users">
-        <a>Users</a>
+        <a
+          sx={{
+            color: 'text',
+            fontSize: 3,
+            cursor: 'pointer'
+          }}>
+          Users
+        </a>
       </Link>
 
       <Link href="/profile">
-        <a>Profile</a>
+        <a
+          sx={{
+            color: 'text',
+            fontSize: 3,
+            cursor: 'pointer'
+          }}>
+          Profile
+        </a>
       </Link>
     </nav>
   </header>
