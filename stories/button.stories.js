@@ -5,9 +5,9 @@ export default {
   argTypes: { onClick: { action: 'clicked' } }
 }
 
-const TemplateWithText = args => <Button {...args}>Hello Button</Button>
+const TemplateWithText = (args) => <Button {...args}>Hello Button</Button>
 
-const TemplateWithEmoji = args => (
+const TemplateWithEmoji = (args) => (
   <Button {...args}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯

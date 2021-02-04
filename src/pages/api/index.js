@@ -16,6 +16,6 @@ const headlines = [
   'Quite a fetching ketch.'
 ]
 
-const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)]
+const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
 export default handler

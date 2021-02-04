@@ -7,6 +7,11 @@ module.exports = {
       jsx: true
     }
   },
+  settings: {
+    react: {
+      version: '17'
+    }
+  },
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
