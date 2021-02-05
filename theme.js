@@ -11,7 +11,8 @@ const heading = {
 
 const theme = {
   ...deep,
-  // custom container 'variants':
+
+  // custom'variants':
   containers: {
     card: {
       boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
@@ -27,6 +28,20 @@ const theme = {
       mx: 'auto'
     }
   },
+  links: {
+    nav: {
+      color: 'text',
+      fontSize: 3,
+      cursor: 'pointer'
+    },
+    activeNav: {
+      variant: 'links.nav',
+      fontSize: 4,
+      fontWeight: 'bold'
+    }
+  },
+
+  // default "deep" theme styles:
   colors: {
     text: 'hsl(210, 50%, 96%)',
     background: 'hsl(230, 25%, 18%)',

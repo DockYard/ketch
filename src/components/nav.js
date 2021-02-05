@@ -24,9 +24,7 @@ const Nav = () => (
       <Link href="/">
         <a
           sx={{
-            fontWeight: 'bold',
-            fontSize: 4,
-            cursor: 'pointer'
+            variant: 'links.activeNav'
           }}>
           Home
         </a>
@@ -35,9 +33,7 @@ const Nav = () => (
       <Link href="/about">
         <a
           sx={{
-            color: 'text',
-            fontSize: 3,
-            cursor: 'pointer'
+            variant: 'links.nav'
           }}>
           About
         </a>
@@ -46,9 +42,7 @@ const Nav = () => (
       <Link href="/lists">
         <a
           sx={{
-            color: 'text',
-            fontSize: 3,
-            cursor: 'pointer'
+            variant: 'links.nav'
           }}>
           Lists
         </a>
@@ -57,9 +51,7 @@ const Nav = () => (
       <Link href="/users">
         <a
           sx={{
-            color: 'text',
-            fontSize: 3,
-            cursor: 'pointer'
+            variant: 'links.nav'
           }}>
           Users
         </a>
@@ -68,9 +60,7 @@ const Nav = () => (
       <Link href="/profile">
         <a
           sx={{
-            color: 'text',
-            fontSize: 3,
-            cursor: 'pointer'
+            variant: 'links.nav'
           }}>
           Profile
         </a>
