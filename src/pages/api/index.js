@@ -10,6 +10,7 @@ const headlines = [
   'Ketch me if you can.',
   'Ketch of the day.',
   'Ketch up!',
+  'Ketch-22',
   'Quite a fetching ketch.',
   'This is so ketch.',
   "Get in loser. We're going sailing.",

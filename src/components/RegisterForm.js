@@ -2,12 +2,27 @@
 /** @jsx jsx */
 
 import { jsx } from 'theme-ui'
+import { auth } from '../../config/firebase'
 import { useForm } from 'react-hook-form'
 import styles from './RegisterForm.module.scss'
 
+const signUp = async ({ name, email, password }) => {
+  try {
+    const response = await auth.createUserWithEmailAndPassword(email, password)
+    console.log({ response })
+    return response
+  } catch (error) {
+    console.error(error)
+    return error
+  }
+}
+
 const RegisterForm = () => {
   const { register, errors, handleSubmit } = useForm()
-  const onSubmit = (data) => console.log({ data })
+  const onSubmit = async (data) => {
+    const user = await signUp(data)
+    console.log({ user })
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
