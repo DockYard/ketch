@@ -28,18 +28,6 @@ const theme = {
       mx: 'auto'
     }
   },
-  links: {
-    nav: {
-      color: 'text',
-      fontSize: 3,
-      cursor: 'pointer'
-    },
-    activeNav: {
-      variant: 'links.nav',
-      fontSize: 4,
-      fontWeight: 'bold'
-    }
-  },
 
   // default "deep" theme styles:
   colors: {

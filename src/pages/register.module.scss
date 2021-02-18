@@ -1,0 +1,35 @@
+@import "../styles/config";
+
+.register {
+  background-color: $gray-color;
+  margin: 6rem auto 0;
+  text-align: center;
+  width: 75%;
+}
+
+.register h1 {
+  color: darken($gray-color, 40%);
+  font-size: nth($font-sizes, 7);
+  font-weight: 800;
+  line-height: nth($line-heights, 7);
+  padding-top: 0.5rem;
+}
+
+.register p {
+  color: darken($gray-color, 30%);
+  margin: 0.5rem 0;
+
+  a {
+    color: $text-color;
+    padding-left: 0.5rem;
+
+    &:hover {
+      color: lighten($gray-color, 20%);
+    }
+  }
+}
+
+.registerForm {
+  background-color: lighten($gray-color, 10%);
+  padding: 0.5rem 1.5rem 1.5rem;
+}

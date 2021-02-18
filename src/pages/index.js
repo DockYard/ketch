@@ -5,30 +5,10 @@ import { jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
 
 const Home = ({ content }) => (
-  <div
-    sx={{
-      height: `calc(100vh - 60px)`
-    }}>
-    <div
-      sx={{
-        variant: 'containers.page'
-      }}>
-      <h1
-        sx={{
-          color: 'secondary',
-          fontSize: 6,
-          my: 2
-        }}>
-        {content.headline}
-      </h1>
-      <h3
-        sx={{
-          fontWeight: 200,
-          fontStyle: 'italic',
-          color: 'gray'
-        }}>
-        {content.timestamp}
-      </h3>
+  <div>
+    <div>
+      <h1>{content.headline}</h1>
+      <h3>{content.timestamp}</h3>
     </div>
   </div>
 )

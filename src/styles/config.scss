@@ -1,0 +1,8 @@
+// This pattern is copied from
+// https://medium.com/clover-platform-blog/modular-scss-and-why-you-need-it-6bb2d8c40fd8
+@import "config/functions";
+@import "config/breakpoints";
+@import "config/colors";
+@import "config/mixins";
+@import "config/variables";
+@import "config/placeholders";

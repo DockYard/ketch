@@ -1,0 +1,26 @@
+@use "sass:list";
+@import "../styles/config";
+
+.form label {
+  display: block;
+  font-size: nth($font-sizes, 2);
+  font-weight: 500;
+  line-height: nth($line-heights, 5);
+  margin-top: 0.5rem;
+}
+
+.form input {
+  appearance: none;
+  border-color: $gray-color;
+  border-width: 1px;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.errors {
+  margin: 0.5rem 0;
+  font-size: nth($font-sizes, 1);
+  line-height: nth($line-heights, 1);
+  color: $error-color;
+}

@@ -1,0 +1,23 @@
+@use "sass:list";
+@import "../styles/config";
+
+.a {
+  color: $text-color;
+  cursor: pointer;
+  font-size: list.nth($font-sizes, 4);
+  line-height: list.nth($line-heights, 4);
+
+  &:hover {
+    color: lighten($gray-color, 20%);
+  }
+}
+
+.active {
+  color: $highlight-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $highlight-color;
+    cursor: default;
+  }
+}

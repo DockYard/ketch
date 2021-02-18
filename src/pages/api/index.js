@@ -6,14 +6,15 @@ const handler = (req, res) => {
 }
 
 const headlines = [
+  'Ketch and Kill.',
+  'Ketch me if you can.',
+  'Ketch of the day.',
+  'Ketch up!',
+  'Quite a fetching ketch.',
   'This is so ketch.',
   "Get in loser. We're going sailing.",
-  'Ketch me if you can.',
-  'Ketch up!',
-  'Ketch of the day.',
   "Let's play ketch.",
-  "We're doing boat stuff.",
-  'Quite a fetching ketch.'
+  "We're doing boat stuff."
 ]
 
 const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)]

@@ -3,15 +3,19 @@
 
 import { ThemeProvider, jsx } from 'theme-ui'
 import PropTypes from 'prop-types'
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
+// Import Global and Theme styles
+import '../styles/global.scss'
 import theme from '../../theme'
-import '../styles/global.css'
+import styles from './_app.module.scss'
 
 const App = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
-    <div>
+    <div className={styles.app}>
       <Nav />
-      <Component {...pageProps} />
+      <div className={styles.page}>
+        <Component {...pageProps} />
+      </div>
     </div>
   </ThemeProvider>
 )
