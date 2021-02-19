@@ -2,26 +2,21 @@
 /** @jsx jsx */
 
 import { jsx } from 'theme-ui'
-import { auth } from 'config/firebase'
+// import { auth } from 'config/firebase'
 import { useForm } from 'react-hook-form'
+import { useRouter } from 'next/router'
+import { useAuth } from 'hooks/useAuth'
 import styles from 'components/RegisterForm.module.scss'
-
-const signUp = async ({ name, email, password }) => {
-  try {
-    const response = await auth.createUserWithEmailAndPassword(email, password)
-    console.log({ response })
-    return response
-  } catch (error) {
-    console.error(error)
-    return error
-  }
-}
 
 const RegisterForm = () => {
   const { register, errors, handleSubmit } = useForm()
+  const auth = useAuth()
+  const router = useRouter()
+
   const onSubmit = async (data) => {
-    const user = await signUp(data)
-    console.log({ user })
+    await auth.signUp(data)
+
+    router.push('/profile')
   }
 
   return (

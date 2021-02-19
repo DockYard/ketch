@@ -3,11 +3,19 @@
 
 import { jsx } from 'theme-ui'
 import { useForm } from 'react-hook-form'
+import { useRouter } from 'next/router'
+import { useAuth } from 'hooks/useAuth'
 import styles from 'components/LoginForm.module.scss'
 
 const LoginForm = () => {
   const { register, errors, handleSubmit } = useForm()
-  const onSubmit = (data) => console.log({ data })
+  const auth = useAuth()
+  const router = useRouter()
+
+  const onSubmit = async (data) => {
+    await auth.signIn(data)
+    router.push('/profile')
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>

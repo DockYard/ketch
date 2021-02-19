@@ -26,6 +26,7 @@ const Profile = () => {
       <h1>Profile</h1>
       <h2>{`Welcome ${auth.user.name}`}</h2>
       <p>{`You are logged in with ${auth.user.email}`}.</p>
+      <button onClick={() => auth.signOut()}>Sign Out</button>
     </div>
   )
 }

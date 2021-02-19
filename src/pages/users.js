@@ -2,7 +2,12 @@
 /** @jsx jsx */
 
 import { jsx } from 'theme-ui'
+import useRequireAuth from 'hooks/useRequireAuth'
 
-const Users = () => <h1>Users</h1>
+const Users = () => {
+  useRequireAuth()
+
+  return <h1>Users</h1>
+}
 
 export default Users
