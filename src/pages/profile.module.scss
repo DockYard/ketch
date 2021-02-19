@@ -1,0 +1,18 @@
+@import "styles/config";
+
+.profile {
+
+}
+
+.profile a {
+  color: $purple-color;
+  padding-left: 0.5rem;
+
+  &:hover {
+    color: lighten($purple-color, 10%);
+  }
+}
+
+.profile p a {
+  padding-left: 0;
+}
