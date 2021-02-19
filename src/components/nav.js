@@ -2,8 +2,8 @@
 /** @jsx jsx */
 
 import { jsx } from 'theme-ui'
-import ActiveLink from './ActiveLink'
-import styles from './Nav.module.scss'
+import ActiveLink from 'components/ActiveLink'
+import styles from 'components/Nav.module.scss'
 
 const Nav = () => (
   <header className={styles.header}>

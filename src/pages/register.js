@@ -3,8 +3,8 @@
 
 import { jsx } from 'theme-ui'
 import Link from 'next/link'
-import RegisterForm from '../components/RegisterForm'
-import styles from './register.module.scss'
+import RegisterForm from 'components/RegisterForm'
+import styles from 'pages/register.module.scss'
 
 const Register = () => (
   <div className={styles.register}>

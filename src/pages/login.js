@@ -3,8 +3,8 @@
 
 import { jsx } from 'theme-ui'
 import Link from 'next/link'
-import LoginForm from '../components/LoginForm'
-import styles from './login.module.scss'
+import LoginForm from 'components/LoginForm'
+import styles from 'pages/login.module.scss'
 
 const Login = () => (
   <div className={styles.login}>

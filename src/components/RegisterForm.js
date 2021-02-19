@@ -2,9 +2,9 @@
 /** @jsx jsx */
 
 import { jsx } from 'theme-ui'
-import { auth } from '../../config/firebase'
+import { auth } from 'config/firebase'
 import { useForm } from 'react-hook-form'
-import styles from './RegisterForm.module.scss'
+import styles from 'components/RegisterForm.module.scss'
 
 const signUp = async ({ name, email, password }) => {
   try {

@@ -3,7 +3,7 @@
 
 import { jsx } from 'theme-ui'
 import { useForm } from 'react-hook-form'
-import styles from './LoginForm.module.scss'
+import styles from 'components/LoginForm.module.scss'
 
 const LoginForm = () => {
   const { register, errors, handleSubmit } = useForm()
