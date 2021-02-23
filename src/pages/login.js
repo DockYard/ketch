@@ -1,7 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
-import { jsx } from 'theme-ui'
 import Link from 'next/link'
 import LoginForm from 'components/LoginForm'
 import styles from 'pages/login.module.scss'

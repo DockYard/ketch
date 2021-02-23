@@ -1,7 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
-import { jsx } from 'theme-ui'
 import ActiveLink from 'components/ActiveLink'
 import styles from 'components/Nav.module.scss'
 

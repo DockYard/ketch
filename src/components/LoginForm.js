@@ -1,7 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
-import { jsx } from 'theme-ui'
 import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/router'
 import { useAuth } from 'hooks/useAuth'

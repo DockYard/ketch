@@ -1,7 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
-import { jsx } from 'theme-ui'
 import { useAuth } from 'hooks/useAuth'
 import Link from 'next/link'
 import styles from 'pages/profile.module.scss'
