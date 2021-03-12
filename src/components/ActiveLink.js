@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import styles from 'components/ActiveLink.module.scss'
+import styles from './ActiveLink.module.scss'
 
 const ActiveLink = ({ children, href }) => {
   const router = useRouter()
